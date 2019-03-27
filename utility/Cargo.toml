@@ -1,0 +1,9 @@
+[package]
+name = "utility"
+version = "0.1.0"
+authors = ["CherryWorm <nico.gruendel@web.de>"]
+edition = "2018"
+
+[dependencies]
+clap = "2.32.0"
+shellexpand = "1.0"

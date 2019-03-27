@@ -1,0 +1,18 @@
+diff --git a/src/TraceStream.cc b/src/TraceStream.cc
+index cb3d4012..ba5d37ac 100644
+--- a/src/TraceStream.cc
++++ b/src/TraceStream.cc
+@@ -1199,11 +1199,12 @@ TraceWriter::TraceWriter(const std::string& file_name,
+     supports_file_data_cloning_ = true;
+   }
+   unlink(version_clone_path.c_str());
+-
++/*
+   if (!probably_not_interactive(STDOUT_FILENO)) {
+     printf("rr: Saving execution to trace directory `%s'.\n",
+            trace_dir.c_str());
+   }
++*/
+ }
+ 
+ void TraceWriter::setup_cpuid_records(bool has_cpuid_faulting,
